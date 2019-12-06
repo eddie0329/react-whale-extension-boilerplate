@@ -1,29 +1,31 @@
 {
-  "name": "Chrome Extension with React & Webpack",
-  "options_page": "options.html",
-  "background": {
-    "page": "background.html"
-  },
-  "browser_action": {
-    "default_popup": "popup.html",
-    "default_icon": "icon-34.png"
-  },
-  "chrome_url_overrides": {
-    "newtab": "newtab.html"
-  },
+  "manifest_version": 2,
+  "name": "Whale Extension Sidebar Template with React & Webpack",
+  "version": "1.0.0",
+  "description": "Whale Extension Sidebar Template",
   "icons": {
     "128": "icon-128.png"
   },
-  "content_scripts": [{
-    "matches": ["http://*/*", "https://*/*", "<all_urls>"],
-    "js": ["contentScript.bundle.js"],
-    "css": ["content.styles.css"]
-  }],
+  "sidebar_action": {
+    "default_page": "sidebar.html",
+    "default_title": "Whale Extension Sidebar Template",
+    "use_navigation_bar": false,
+    "mobile_user_agent": true
+  },
+  "background": {
+    "page": "background.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+      "js": ["contentScript.bundle.js"],
+      "css": ["content.styles.css"]
+    }
+  ],
   "web_accessible_resources": [
     "content.styles.css",
     "icon-128.png",
     "icon-34.png"
   ],
-  "manifest_version": 2,
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }

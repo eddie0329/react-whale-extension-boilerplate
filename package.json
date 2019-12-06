@@ -1,7 +1,7 @@
 {
-  "name": "chrome-extension-boilerplate-react",
-  "version": "2.2.1",
-  "description": "A chrome extension boilerplate built with React 16 and Webpack 4",
+  "name": "whale-extension-sidebar-boilerplate-react",
+  "version": "1.0.0",
+  "description": "whale extension for sidebar boilerplate built with React 16 and Webpack 4",
   "license": "MIT",
   "scripts": {
     "build": "node utils/build.js",
