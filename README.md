@@ -108,8 +108,8 @@ ApiCall({ key: secrets.key });
 ## Resources:
 
 - [Webpack documentation](https://webpack.js.org/concepts/)
-- [Chrome Extension documentation](https://developer.chrome.com/extensions/getstarted)
+- [Whale Extension documentation](developers.whale.naver.com)
 
 ---
 
-Michael Xieyang Liu | [Website](https://lxieyang.github.io)
+Refered| [Website](https://lxieyang.github.io)
